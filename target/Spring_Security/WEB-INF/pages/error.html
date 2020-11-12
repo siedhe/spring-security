@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error creation</title>
+</head>
+<body>
+<h1>User with this name created before your request! Please change name!</h1>
+<div>
+    <br>
+    <br>
+    <td>
+        <form th:method="GET" th:action="@{/admin/new}">
+            <input type="submit" value="Try again"/>
+        </form>
+    </td>
+
+
+</div>
+</body>
+</html>
